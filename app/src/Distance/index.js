@@ -29,7 +29,7 @@ const Distance = () => {
 
   return loading ? null : (
     //Row 2 - Search and Filter
-    <div class="container-fluid">
+    <div class="container-fluid h-75">
       <div class="row p-4 search-row">
         <div class="col text-center align-self-center px-10">
           <div class="form">
@@ -51,7 +51,7 @@ const Distance = () => {
             </form>
           </div>
         </div>
-        <div class="col text-center align-self-center px-10">
+        <div class="col align-self-center px-10">
           <h4>Filter by Product Type</h4>
           <Filter setCheckedProduct={setCheckedProduct} />
         </div>

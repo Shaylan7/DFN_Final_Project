@@ -34,7 +34,7 @@ const Distance = () => {
         <div class="col text-center align-self-center px-10">
           <div class="form">
             <form {...{ onSubmit }}>
-              <label>
+              <label htmlFor="search">
                 <div class="form">
                   <i class="fa fa-search"></i>
                   <input
@@ -43,6 +43,7 @@ const Distance = () => {
                     placeholder="Search Address or Zipcode..."
                     onChange={(e) => setOrigin(e.currentTarget.value)}
                     value={origin}
+                    id="search"
                   />
                   <button class="btn btn-primary">Search</button>
                 </div>

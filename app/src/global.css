@@ -38,3 +38,19 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+/* Fonts */ 
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand:wght@500&display=swap');
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: 'Quicksand', sans-serif !important;    
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    }
+
+p, .p {
+    font-family: 'DM Sans', sans-serif;
+}

@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { NavLink, Routes, Route } from "react-router-dom";
 
+import AboutPage from "../AboutUs";
 import Distance from "../Distance";
 import Donation from "../Donation";
 import useApi from "../auth/useApi";
@@ -44,7 +45,9 @@ const App = () => {
                 <li class="nav-item">
                   | <NavLink to="donation"> Make a Donation</NavLink>
                 </li>
-                <li class="nav-item">| About Us </li>
+                <li class="nav-item">
+                  | <NavLink to="about">About Us </NavLink>
+                </li>
                 <li class="nav-item">| Donations Tracker</li>
                 <li class="nav-item">| FAQ </li>
               </ul>
@@ -56,6 +59,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/donation" element={<DonationForm />} />
+          <Route path="/about" element={<AboutUsPage />} />
         </Routes>
       </main>
     </>
@@ -92,6 +96,14 @@ const DonationForm = () => {
   return (
     <>
       <Donation />
+    </>
+  );
+};
+
+const AboutUsPage = () => {
+  return (
+    <>
+      <AboutPage />
     </>
   );
 };

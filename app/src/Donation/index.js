@@ -60,6 +60,7 @@ const Donation = () => {
       <form onSubmit={onSubmit}>
         <div class="row mb-5 h-50 w-75 shadow-sm p-3 mb-5 bg-white mx-auto">
           <div class="col-4 form-group form-inline align-self-start">
+            <h1>Make a Donation</h1>
             <div class="row mb-4">
               <label>
                 Carrier Name:

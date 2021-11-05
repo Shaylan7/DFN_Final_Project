@@ -3,6 +3,8 @@ import * as React from "react";
 import "./donationform.css";
 import useApi from "../auth/useApi";
 
+import img from "./foodbank.jpg";
+
 const Donation = () => {
   const { loading, apiClient } = useApi();
   // const [carrier_name, setCarrierName] = React.useState("");
@@ -54,31 +56,50 @@ const Donation = () => {
   //   };
 
   return loading ? null : (
-    <div className="formpage">
+    <div class="container-fluid">
       <form onSubmit={onSubmit}>
-        <div className="formcontent">
-          <label>
-            Carrier Name: <input type="integer" name="carrier_name" />
-          </label>
-          <label>
-            Donation Site: <input type="text" name="donation_site_name" />
-          </label>
-          <label>
-            Product Owner Name: <input type="text" name="product_owner" />
-          </label>
-          <label htmlFor="healthy">Product Type: </label>
-          <select id="product_type_id" name="product_type_id">
-            <option value="1">Food</option>
-            <option value="2">Consumer Packaged Goods</option>
-          </select>
-          <label>
-            Lbs of goods: <input type="integer" name="lbs" />
-          </label>
-          <label>
-            Today's Date: <input type="date" name="date" />
-          </label>
-
-          <button>Add</button>
+        <div class="row mb-5 h-50 w-75 shadow-sm p-3 mb-5 bg-white mx-auto">
+          <div class="col-4 form-group form-inline align-self-start">
+            <div class="row mb-4">
+              <label>
+                Carrier Name:
+                <input type="integer" name="carrier_name" />
+              </label>
+            </div>
+            <div class="row mb-4">
+              <label>
+                Donation Site: <input type="text" name="donation_site_name" />
+              </label>
+            </div>
+            <div class="row mb-4">
+              <label>
+                Product Owner Name: <input type="text" name="product_owner" />
+              </label>
+            </div>
+            <div class="row mb-4">
+              <label htmlFor="healthy">Product Type: </label>
+              <select id="product_type_id" name="product_type_id">
+                <option value="1">Food</option>
+                <option value="2">Consumer Packaged Goods</option>
+              </select>
+            </div>
+            <div class="row mb-4">
+              <label>
+                Lbs of goods: <input type="integer" name="lbs" />
+              </label>
+            </div>
+            <div class="row mb-4">
+              <label>
+                Today's Date: <input type="date" name="date" />
+              </label>
+            </div>
+            <div class="row mb-4">
+              <button>Submit</button>
+            </div>
+          </div>
+          <div class="col-8">
+            <img class="img-fluid" src={img} />
+          </div>
         </div>
       </form>
     </div>

@@ -1,13 +1,14 @@
 import * as React from "react";
 
 import img from "./aboutimage.jpg";
+import CarrierQuotes from "./carrierquotes";
 
 const AboutPage = () => {
   return (
     <div>
-      <div class="shadow p-3 mb-5 bg-white rounded">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
         <div class="container-fluid px-4 py-5">
-          <div class="row align-items-center g-5 py-5">
+          <div class="row align-items-center g-5 py-3">
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3">About Us</h1>
               <p>
@@ -27,7 +28,7 @@ const AboutPage = () => {
               <img src={img} class="d-block mx-lg-auto img-fluid" />
             </div>
           </div>
-          <div class="row align-items-center g-5 py-5">
+          <div class="row align-items-center g-5 py-3">
             <div class="col-10 col-sm-8 col-lg-6">
               <img src={img} class="d-block mx-lg-auto img-fluid" />
             </div>
@@ -60,6 +61,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <CarrierQuotes />
       </div>
     </div>
   );

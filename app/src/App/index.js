@@ -24,12 +24,12 @@ const App = () => {
 
   return (
     <>
-      <header className="add-space">
-        <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
           <div class="container-fluid">
             <Auth />{" "}
             <button
-              class="navbar-toggler"
+              class="navbar-toggler border-0"
               type="button"
               data-toggle="collapse"
               data-target="#navbarResponsive"

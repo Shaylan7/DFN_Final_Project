@@ -62,7 +62,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div class="p-4 mb-7">
         <CarrierQuotes />
       </div>
     </div>

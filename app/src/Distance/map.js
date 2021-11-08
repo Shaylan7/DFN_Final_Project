@@ -1,10 +1,15 @@
 import * as React from "react";
 
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+const containerStyle = {
+  position: "relative",
+  height: "100%",
+  width: "100%",
+};
+
 const style = {
   width: "100%",
   height: "100%",
-  borderRadius: "10px",
 };
 
 const MapContainer = (props) => {
@@ -16,6 +21,8 @@ const MapContainer = (props) => {
         lng: -122.3321,
       }}
       zoom={10}
+      resetBoundsOnResize={true}
+      containerStyle={containerStyle}
       style={style}
     >
       {props.distance.slice(0, 3).map((element) => {

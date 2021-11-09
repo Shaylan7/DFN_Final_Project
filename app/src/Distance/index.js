@@ -34,51 +34,53 @@ const Distance = () => {
 
   return loading ? null : (
     //Row 2 - Search and Filter
-    <div class="container-fluid h-75">
-      <div class="row p-4 border-top border-dark">
-        <div class="col text-center align-self-center px-10">
-          <div class="form">
-            <form {...{ onSubmit }}>
-              <label htmlFor="search">
-                <div class="form">
-                  <i class="fa fa-search"></i>
-                  <input
-                    type="text"
-                    class="form-control form-input"
-                    placeholder="Search Address or Zipcode..."
-                    onChange={(e) => setOrigin(e.currentTarget.value)}
-                    value={origin}
-                    id="search"
-                  />
-                  <button class="btn btn-primary">Search</button>
-                </div>
-              </label>
-            </form>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="container-fluid h-75">
+        <div class="row p-4 ">
+          <div class="col text-center align-self-center px-10">
+            <div class="form">
+              <form {...{ onSubmit }}>
+                <label htmlFor="search">
+                  <div class="form">
+                    <i class="fa fa-search"></i>
+                    <input
+                      type="text"
+                      class="form-control form-input"
+                      placeholder="Search Address or Zipcode..."
+                      onChange={(e) => setOrigin(e.currentTarget.value)}
+                      value={origin}
+                      id="search"
+                    />
+                    <button class="btn btn-primary">Search</button>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="col align-self-center px-10">
+            <h4>Filter by Product Type</h4>
+            <Filter setCheckedProduct={setCheckedProduct} />
           </div>
         </div>
-        <div class="col align-self-center px-10">
-          <h4>Filter by Product Type</h4>
-          <Filter setCheckedProduct={setCheckedProduct} />
-        </div>
-      </div>
-      {/* Row 3 - results and Map  */}
-      <section class="p-0">
-        <div class="container-fluid px-0 h-50">
-          <div class="row g-0">
-            <div class="col-md align-items-center nopadding">
-              <div class="left border border-dark">
-                <DonationSites
-                  checkedProduct={checkedProduct}
-                  distance={distance}
-                />
+        {/* Row 3 - results and Map  */}
+        <section class="p-0">
+          <div class="container-fluid px-0 h-50">
+            <div class="row g-0">
+              <div class="col-md align-items-center nopadding">
+                <div class="left border border-dark">
+                  <DonationSites
+                    checkedProduct={checkedProduct}
+                    distance={distance}
+                  />
+                </div>
+              </div>
+              <div class="right col-md-6 col-lg-6 col-xs-12 border border-dark nopadding mapsection">
+                <MapContainer distance={distance} />
               </div>
             </div>
-            <div class="right col-md-6 col-lg-6 col-xs-12 border border-dark nopadding mapsection">
-              <MapContainer distance={distance} />
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };

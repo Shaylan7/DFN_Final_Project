@@ -15,9 +15,9 @@ const style = {
 const MapContainer = (props) => {
   const [selectedSite, setSelectedSite] = React.useState(null);
   console.log("hello", selectedSite);
-  selectedSite.name
-    ? console.log("hi", selectedSite.name)
-    : console.log("nothing");
+  //   selectedSite.name
+  //     ? console.log("hi", selectedSite.name)
+  //     : console.log("nothing");
 
   return (
     <Map

@@ -36,7 +36,9 @@ const DonationSites = (props) => {
                     <p>
                       {" "}
                       <a
+                        target="_blank"
                         href={`https://maps.google.com?saddr=${props.origin} + &daddr=${element.address}`}
+                        rel="noreferrer"
                       >
                         Get Directions
                       </a>

@@ -8,24 +8,23 @@ const BarChart = () => {
       hello
       <Bar
         data={{
-          labels: ["Consumer Packaged Goods", "Food"],
+          labels: ["2020", "2021"],
           datasets: [
             {
-              label: "# of Votes",
-              data: [12, 19, 3, 5, 2, 3],
-              backgroundColor: [
-                "rgba(255, 99, 132, 0.2)",
-                "rgba(54, 162, 235, 0.2)",
-                "rgba(255, 206, 86, 0.2)",
-                "rgba(75, 192, 192, 0.2)",
-                "rgba(153, 102, 255, 0.2)",
-                "rgba(255, 159, 64, 0.2)",
-              ],
+              label: "Consumer Packaged Goods",
+              data: [12, 19],
+              backgroundColor: ["#d7d0bdff", "#d7d0bdff"],
+            },
+            {
+              label: "Food",
+              data: [13, 45],
+              backgroundColor: ["#7b8c6cff", "#7b8c6cff"],
             },
           ],
         }}
-        height={400}
-        width={600}
+        height={10}
+        width={50}
+        options={{ maintainAspectRatio: true }}
       />
     </div>
   );

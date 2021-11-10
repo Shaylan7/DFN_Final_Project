@@ -9,6 +9,7 @@ const makeApi = (accessToken) => {
     addOrUpdateUser: (user) => _post("/api/users", { user }),
     getDistance: (origin) => _get("/api/distance?origin=" + origin),
     addDonation: (donation) => _post("/api/donation", donation),
+    getDonationData: () => _get("/api/donationData"),
   };
 
   const _get = async (url) => (await _fetch(url)).json();

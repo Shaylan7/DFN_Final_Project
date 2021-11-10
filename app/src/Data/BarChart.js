@@ -8,18 +8,22 @@ const BarChart = (props) => {
   const { loading, apiClient } = useApi();
 
   let donationData = props.donationData;
-  console.log("yellow", donationData[0].year);
-  console.log("red", donationData[1].product_type_id);
+  let food20;
+  let food21;
 
-  let food20 = donationData[2].sum;
-  let food21 = donationData[0].sum;
+  let cpg20;
+  let cpg21;
 
-  let cpg20 = donationData[3].sum;
-  let cpg21 = donationData[1].sum;
+  if (donationData) {
+    food20 = donationData[2].sum;
+    food21 = donationData[0].sum;
+
+    cpg20 = donationData[3].sum;
+    cpg21 = donationData[1].sum;
+  }
 
   return loading ? null : (
-    <div>
-      hello
+    <div class="chartbox">
       <Bar
         data={{
           labels: ["2020", "2021"],

@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top">
           <div class="container-fluid">
             <Auth />{" "}
             <button

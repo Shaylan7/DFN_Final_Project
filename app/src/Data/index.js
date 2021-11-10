@@ -2,6 +2,8 @@ import * as React from "react";
 
 import useApi from "../auth/useApi";
 
+import "../global.css";
+
 import BarChart from "./BarChart";
 
 const DataVisuals = () => {

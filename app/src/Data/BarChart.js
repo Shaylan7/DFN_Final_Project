@@ -2,10 +2,8 @@ import * as React from "react";
 
 import { Bar } from "react-chartjs-2";
 
-import useApi from "../auth/useApi";
 
 const BarChart = (props) => {
-  const { loading, apiClient } = useApi();
 
   let donationData = props.donationData;
   let food20;
@@ -22,7 +20,7 @@ const BarChart = (props) => {
     cpg21 = donationData[1].sum;
   }
 
-  return loading ? null : (
+  return (
     <div class="chartbox">
       <Bar
         data={{

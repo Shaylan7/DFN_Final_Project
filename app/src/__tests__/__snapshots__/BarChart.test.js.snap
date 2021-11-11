@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot test testing BarChart component 1`] = `
+<div
+  class="chartbox"
+>
+  <canvas
+    height={10}
+    onClick={[Function]}
+    role="img"
+    width={50}
+  />
+</div>
+`;

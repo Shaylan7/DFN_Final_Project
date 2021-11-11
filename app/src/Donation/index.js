@@ -94,7 +94,9 @@ const Donation = () => {
               class="row dropdown mb-3"
               style={{ width: "50%", marginRight: "0px", marginLeft: "0px" }}
             >
-              <label htmlFor="product_type_id">Product Type: </label>
+              <label class="custom-field" htmlFor="product_type_id">
+                Product Type:{" "}
+              </label>
               <select
                 class="w-60"
                 id="product_type_id"

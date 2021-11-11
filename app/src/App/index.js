@@ -78,7 +78,7 @@ const Auth = () => {
 
   return isAuthenticated ? (
     <>
-      Hello, {user.given_name} <Logout />
+      Hello, {user.given_name} &nbsp; <Logout />
     </>
   ) : (
     <Login />

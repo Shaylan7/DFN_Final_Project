@@ -41,7 +41,7 @@ const Distance = () => {
             <div class="form">
               <form {...{ onSubmit }}>
                 <label htmlFor="search">
-                  <div class="form">
+                  <div class="search">
                     <i class="fa fa-search"></i>
                     <input
                       type="text"

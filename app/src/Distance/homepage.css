@@ -1,7 +1,7 @@
 
-.add-space {
+/* .add-space {
     margin: 30px
-}
+} */
 
 .distance-container {
     margin-bottom: 0px;
@@ -45,7 +45,7 @@
 }
 
 .form-input {
-    height: 55px;
+    height: 50px;
     text-indent: 33px;
     border-radius: 10px
 }
@@ -53,6 +53,18 @@
 .form-input:focus {
     box-shadow: none;
     border: none
+}
+
+.search {
+    position: relative; 
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
 }
 
 .nopadding {

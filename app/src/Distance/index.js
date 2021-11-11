@@ -41,8 +41,10 @@ const Distance = () => {
             <div class="form">
               <form {...{ onSubmit }}>
                 <label htmlFor="search">
-                  <div class="search">
-                    <i class="fa fa-search"></i>
+                  <div class="form input-group">
+                    <button class="btn">
+                      <i class="fa fa-search"></i>
+                    </button>
                     <input
                       type="text"
                       class="form-control form-input"
@@ -51,7 +53,7 @@ const Distance = () => {
                       value={origin}
                       id="search"
                     />
-                    <button class="btn">Search</button>
+                    {/* <button class="btn">Search</button> */}
                   </div>
                 </label>
               </form>

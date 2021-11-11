@@ -23,8 +23,8 @@
 
 .form .fa-search {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 40px;
     color: #9ca3af
 }
 
@@ -55,17 +55,17 @@
     border: none
 }
 
-.search {
+/* .search {
     position: relative; 
-}
+} */
 
-.search button {
+/* .search button {
     position: absolute;
     top: 5px;
     right: 5px;
     height: 50px;
-    width: 110px;
-}
+    width: 110px; 
+} */
 
 .nopadding {
     padding: 0 !important;

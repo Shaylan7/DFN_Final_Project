@@ -3,6 +3,7 @@ import * as React from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
 
 import AboutPage from "../AboutUs";
+import DataVisuals from "../Data";
 import Distance from "../Distance";
 import Donation from "../Donation";
 import Footer from "../Footer/footer";
@@ -25,7 +26,7 @@ const App = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top">
           <div class="container-fluid">
             <Auth />{" "}
             <button
@@ -49,7 +50,9 @@ const App = () => {
                 <li class="nav-item">
                   | <NavLink to="about">About Us </NavLink>
                 </li>
-                <li class="nav-item">| Donations Tracker</li>
+                <li class="nav-item">
+                  | <NavLink to="data">Donations Tracker </NavLink>
+                </li>
                 <li class="nav-item">| FAQ </li>
               </ul>
             </div>
@@ -61,6 +64,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/donation" element={<DonationForm />} />
           <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/data" element={<DonationTracker />} />
         </Routes>
       </main>
       <footer>
@@ -116,6 +120,14 @@ const AboutUsPage = () => {
   return (
     <>
       <AboutPage />
+    </>
+  );
+};
+
+const DonationTracker = () => {
+  return (
+    <>
+      <DataVisuals />
     </>
   );
 };

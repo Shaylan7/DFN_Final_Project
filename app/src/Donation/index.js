@@ -58,9 +58,11 @@ const Donation = () => {
   return loading ? null : (
     <div class="container-fluid">
       <form onSubmit={onSubmit}>
-        <div class="row mb-5 h-50 w-75 shadow-lg p-3 mb-5 bg-white mx-auto">
-          <div class="col-lg-4 col-sm-12 col-md-12 col-xs-12 form-group form-inline align-self-start">
-            <h1>Make a Donation</h1>
+        <div class="row mb-5 h-50 w-75 shadow-lg rounded pl-3 mb-5 bg-white mx-auto">
+          <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 pr-5 form-group form-inline align-self-start">
+            <div class="pt-3">
+              <h1>Make a Donation</h1>
+            </div>
             <div class="row mb-3">
               <label class="custom-field" aria-label="Carrier Name">
                 <input
@@ -88,9 +90,18 @@ const Donation = () => {
                 />
               </label>
             </div>
-            <div class="row dropdown mb-3">
-              <label htmlFor="healthy">Product Type: </label>
-              <select class="w-60" id="product_type_id" name="product_type_id">
+            <div
+              class="row dropdown mb-3"
+              style={{ width: "50%", marginRight: "0px", marginLeft: "0px" }}
+            >
+              <label htmlFor="product_type_id">Product Type: </label>
+              <select
+                class="w-60"
+                id="product_type_id"
+                name="product_type_id"
+                data-size="2"
+                style={{ width: "50%" }}
+              >
                 <option value="1">Food</option>
                 <option value="2">Consumer Packaged Goods</option>
               </select>
@@ -102,15 +113,18 @@ const Donation = () => {
             </div>
             <div class="row mb-3">
               <label class="custom-field">
-                Today's Date: <input type="date" name="date" />
+                <input type="date" name="date" />
               </label>
             </div>
-            <div class="row mb-3">
+            <div
+              class="row mb-3"
+              style={{ width: "50%", marginRight: "0px", marginLeft: "0px" }}
+            >
               <button>Submit</button>
             </div>
           </div>
-          <div class="col-lg-8 col-sm-12 col-md-12 col-xs-12 pr-0">
-            <img class="img-fluid w-100" src={img} />
+          <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 pr-0 background">
+            {/* <img class="img-fluid w-100" syle={{ width: "100%" }} src={img} /> */}
           </div>
         </div>
       </form>

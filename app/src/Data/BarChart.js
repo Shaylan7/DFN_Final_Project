@@ -2,9 +2,7 @@ import * as React from "react";
 
 import { Bar } from "react-chartjs-2";
 
-
 const BarChart = (props) => {
-
   let donationData = props.donationData;
   let food20;
   let food21;

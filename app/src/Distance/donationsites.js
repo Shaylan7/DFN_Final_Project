@@ -40,7 +40,7 @@ const DonationSites = (props) => {
                         href={`https://maps.google.com?saddr=${props.origin} + &daddr=${element.address}`}
                         rel="noreferrer"
                       >
-                        Get Directions
+                        Get Directions <i class="fas fa-arrow-circle-right"></i>
                       </a>
                     </p>
                   </div>

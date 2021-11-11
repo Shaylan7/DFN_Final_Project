@@ -53,7 +53,6 @@ const App = () => {
                 <li class="nav-item">
                   | <NavLink to="data">Donations Tracker </NavLink>
                 </li>
-                <li class="nav-item">| FAQ </li>
               </ul>
             </div>
           </div>

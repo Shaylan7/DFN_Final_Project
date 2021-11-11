@@ -20,7 +20,7 @@ describe('<Filter />', () => {
     const mockFunction = jest.fn(); // Not sure if I remembered the syntax here, can keep it the same as it is on your side
 
     const filter = Enzyme.shallow(<Filter setUpdateFilter={mockFunction} />);
-    filter.find('input').first().simulate('click');
+    filter.find('input').first().simulate('e');
     expect(mockFunction.mock.calls.length).toEqual(1);
   });
 });

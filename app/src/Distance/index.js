@@ -71,6 +71,7 @@ const Distance = () => {
                   <DonationSites
                     checkedProduct={checkedProduct}
                     distance={distance}
+                    origin={origin}
                   />
                 </div>
               </div>

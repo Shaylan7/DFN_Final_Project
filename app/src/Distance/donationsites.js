@@ -19,7 +19,7 @@ const DonationSites = (props) => {
           .map((element) => {
             let distanceMiles = (
               element.distance.replace("km", "") * 0.621371
-            ).toFixed(2);
+            ).toFixed(1);
             let addressforMap = element.address;
             console.log(addressforMap);
             return (
@@ -32,6 +32,16 @@ const DonationSites = (props) => {
                       {distanceMiles} miles
                       <br />
                       {element.phone_number}{" "}
+                    </p>
+                    <p>
+                      {" "}
+                      <a
+                        target="_blank"
+                        href={`https://maps.google.com?saddr=${props.origin} + &daddr=${element.address}`}
+                        rel="noreferrer"
+                      >
+                        Get Directions
+                      </a>
                     </p>
                   </div>
                 </div>

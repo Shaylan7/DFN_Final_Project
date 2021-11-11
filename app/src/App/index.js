@@ -53,7 +53,6 @@ const App = () => {
                 <li class="nav-item">
                   | <NavLink to="data">Donations Tracker </NavLink>
                 </li>
-                <li class="nav-item">| FAQ </li>
               </ul>
             </div>
           </div>
@@ -79,7 +78,7 @@ const Auth = () => {
 
   return isAuthenticated ? (
     <>
-      Hello, {user.given_name} <Logout />
+      Hello, {user.given_name} &nbsp; <Logout />
     </>
   ) : (
     <Login />

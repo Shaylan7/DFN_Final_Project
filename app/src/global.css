@@ -60,7 +60,11 @@ p, .p {
 
 
 .dark-green-background {
+    background-image: url('./Tree.png'), url('./TreeLeft.png'); 
+    background-position: 83% 100%, 0% 100%; 
+    background-repeat: no-repeat; 
     background-color: #14341c;
+    background-size: 200px, 125px;
 }
 
 .fa-arrow-circle-up {

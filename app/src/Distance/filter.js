@@ -4,7 +4,7 @@ const Filter = (props) => {
   return (
     <div>
       <div class="form-check">
-        <label class="form-check-label" for="inlineRadio1">
+        <label class="form-check-label" for="Option1">
           Food
           <input
             class="form-check-input px-40"
@@ -17,7 +17,7 @@ const Filter = (props) => {
         </label>
       </div>
       <div class="form-check">
-        <label class="form-check-label" for="inlineRadio2">
+        <label class="form-check-label" for="Option2">
           Consumer Goods
           <input
             class="form-check-input"

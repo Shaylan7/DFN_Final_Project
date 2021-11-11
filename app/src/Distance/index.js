@@ -68,8 +68,8 @@ const Distance = () => {
         <section class="p-0">
           <div class="container-fluid px-0 h-50">
             <div class="row g-0">
-              <div class="col-md align-items-center nopadding">
-                <div class="left border border-dark">
+              <div class="col-md align-items-center border nopadding">
+                <div class="left">
                   <DonationSites
                     checkedProduct={checkedProduct}
                     distance={distance}
@@ -77,7 +77,7 @@ const Distance = () => {
                   />
                 </div>
               </div>
-              <div class="right col-md-6 col-lg-6 col-xs-12 border border-dark nopadding mapsection">
+              <div class="right col-md-6 col-lg-6 col-xs-12 border nopadding mapsection">
                 <MapContainer distance={distance} />
               </div>
             </div>

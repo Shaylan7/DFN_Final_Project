@@ -54,3 +54,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 p, .p {
     font-family: 'DM Sans', sans-serif;
 }
+
+
+.dark-green-background {
+    background-color: #14341c;
+}
+
+.fa-arrow-circle-up {
+    color: #46b863; 
+} 
+
+button, .button, .btn {
+    background-color: #6aa4c8ff;
+    color: white 
+}

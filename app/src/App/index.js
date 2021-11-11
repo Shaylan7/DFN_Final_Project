@@ -5,6 +5,7 @@ import { NavLink, Routes, Route } from "react-router-dom";
 import AboutPage from "../AboutUs";
 import Distance from "../Distance";
 import Donation from "../Donation";
+import Footer from "../Footer/footer";
 import useApi from "../auth/useApi";
 import useAuth0 from "../auth/useAuth0";
 import { Login, Logout, Protected } from "../auth/widgets";
@@ -62,6 +63,9 @@ const App = () => {
           <Route path="/about" element={<AboutUsPage />} />
         </Routes>
       </main>
+      <footer>
+        <FooterPage />
+      </footer>
     </>
   );
 };
@@ -75,6 +79,14 @@ const Auth = () => {
     </>
   ) : (
     <Login />
+  );
+};
+
+const FooterPage = () => {
+  return (
+    <>
+      <Footer />
+    </>
   );
 };
 

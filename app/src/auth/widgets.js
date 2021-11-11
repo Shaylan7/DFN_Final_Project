@@ -13,7 +13,7 @@ export const Logout = () => {
 
   return (
     <button
-      class="btn btn-outline-secondary"
+      class="btn"
       onClick={() => logout({ returnTo: window.location.origin })}
     >
       Log out

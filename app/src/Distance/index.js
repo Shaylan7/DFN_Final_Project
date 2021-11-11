@@ -51,7 +51,7 @@ const Distance = () => {
                       value={origin}
                       id="search"
                     />
-                    <button class="btn btn-primary">Search</button>
+                    <button class="btn">Search</button>
                   </div>
                 </label>
               </form>

@@ -60,17 +60,4 @@ Users should be able to...
 * Submit a new donation 
 * Review the donation tracker page for dynamic donation data 
 
-## Technical Risks
 
-
-TO BE FINISHED 
-
-
-## Additional Resources 
-
-TO BE FINISHED 
-
-
-## Contributors ✨
-
-TO BE FINISHED 

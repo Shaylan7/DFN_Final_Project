@@ -2,10 +2,8 @@
 
 Donate Freight Network is an app designed to reduce waste in the trucking industry as well as improve carrier's lives. When carrier's truck load of product is rejected at delivery, Donate Freight Network connects them with the closest donation facility set up to receive the type of product the carrier is loaded with. DF functions similar to a store locator using Google Maps Distance Matrix API. 
 
-[Link to App](https://donate-freight-nework.herokuapp.com/).
+[Link to App](https://donate-freight-network.herokuapp.com/).
 
-[![Deploy to Heroku][deploy-badge]][deploy-workflow]
-[![Reset Heroku DB][reset-badge]][reset-workflow]
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 

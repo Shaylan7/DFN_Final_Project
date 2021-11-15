@@ -59,3 +59,8 @@ Users should be able to...
 * Review the donation tracker page for dynamic donation data 
 
 
+### Future Iterations 
+With more time users would be able to...
+
+* Favorite specific facilities 
+* When using the search functionality carriers would be given the option of selecting “current location” instead of entering an address manually. 

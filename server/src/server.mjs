@@ -3,6 +3,7 @@ import mime from "mime-types";
 
 import distanceRouter from "./distanceRouter.mjs";
 import donationRouter from "./donationRouter.mjs";
+import donationDataRouter from "./donationDataRouter.mjs";
 import jwtCheck from "./jwtCheck.mjs";
 import taskRouter from "./taskRouter.mjs";
 import userRouter from "./userRouter.mjs";
@@ -12,6 +13,7 @@ app.use("/api/tasks", jwtCheck, taskRouter);
 app.use("/api/users", jwtCheck, userRouter);
 app.use("/api/distance", distanceRouter);
 app.use("/api/donation", donationRouter);
+app.use("/api/donationData", donationDataRouter);
 
 // Do not comment out or delete this end point. The React development server
 // won't start until it pings this end point successfully.

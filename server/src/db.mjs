@@ -11,8 +11,9 @@ export const getTasks = (sub) =>
     { sub },
   );
 
-export const getDestinations = () => db.any("SELECT * FROM donation_sites");
+export const getDestinations = () => db.any(`SELECT * FROM "donation_sites"`);
 export const getDonations = () => db.any("SELECT * FROM donation_event");
+export const getDonationData = () => db.any("SELECT SUM(lbs), product_type_id, EXTRACT(year FROM date) as year FROM donation_event GROUP by product_type_id, year");
 
 export const addTask = (sub, name) =>
   db.one(
